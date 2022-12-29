@@ -31,6 +31,7 @@ android {
     viewBinding {
         enabled = true
     }
+    namespace 'com.aisier'
 }
 
 dependencies {
@@ -39,9 +40,9 @@ dependencies {
 
     implementation("com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-ktx:2.0.2")
 
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 
-    def nav_version = "2.3.5"
+    def nav_version = "2.5.3"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 }
